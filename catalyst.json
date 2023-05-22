@@ -1,0 +1,9 @@
+{
+  "functions": {
+    "targets": [
+      "browseai_to_stori_press_function"
+    ],
+    "ignore": [],
+    "source": "functions"
+  }
+}

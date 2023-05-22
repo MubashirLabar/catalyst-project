@@ -1,0 +1,12 @@
+{
+	"name": "browseai_to_stori_press_function",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "mubashirnazir115@gmail.com",
+	"dependencies": {
+		"axios": "^1.4.0",
+		"express": "^4.18.2",
+		"openai": "^3.2.1",
+		"zcatalyst-sdk-node": "latest"
+	}
+}

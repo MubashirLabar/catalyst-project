@@ -1,0 +1,11 @@
+{
+	"deployment": {
+		"name": "browseai_to_stori_press_function",
+		"stack": "node16",
+		"type": "cron",
+		"env_variables": {}
+	},
+	"execution": {
+		"main": "index.js"
+	}
+}

@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "333000001490001",
+      "name": "Browseai-to-StoriPress",
+      "domain": {
+        "id": "10055762475",
+        "name": "browseai-to-storipress-698185418.development"
+      },
+      "timezone": "America/New_York",
+      "env": [
+        {
+          "idx": 1,
+          "id": "698185418",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}

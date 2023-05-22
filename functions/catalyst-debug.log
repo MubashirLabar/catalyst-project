@@ -1,0 +1,45 @@
+[debug] [2023-05-03T10:57:25.398Z] : 
+[debug] [2023-05-03T10:57:25.398Z] : ----------------------------------------------------------------------
+[debug] [2023-05-03T10:57:25.398Z] : Command:      /usr/local/bin/node /opt/homebrew/bin/catalyst functions:shell
+[debug] [2023-05-03T10:57:25.399Z] : CLI Version:  1.14.1
+[debug] [2023-05-03T10:57:25.399Z] : Platform:     darwin
+[debug] [2023-05-03T10:57:25.399Z] : Node Version: v18.14.2
+[debug] [2023-05-03T10:57:25.400Z] : Time:         Wed May 03 2023 15:57:25 GMT+0500 (Pakistan Standard Time)
+[debug] [2023-05-03T10:57:25.400Z] : ----------------------------------------------------------------------
+[debug] [2023-05-03T10:57:25.400Z] : 
+[debug] [2023-05-03T10:57:25.780Z] : > authorizing via signed-in user option
+[debug] [2023-05-03T10:57:25.780Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE"]
+[debug] [2023-05-03T10:57:25.785Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/333000001490001 
+
+[debug] [2023-05-03T10:57:26.846Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 03 May 2023 10:57:26 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["9659494d27=3be17b21c2f6d033e87a691a4a10ac07; Path=/","ZD_CSRF_TOKEN=7fe7b103-33d2-4cc0-b75c-f081cb1cf286;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=7fe7b103-33d2-4cc0-b75c-f081cb1cf286;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-05-03T10:57:26.852Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/333000001490001/environment 
+
+[debug] [2023-05-03T10:57:27.861Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 03 May 2023 10:57:27 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["9659494d27=3be17b21c2f6d033e87a691a4a10ac07; Path=/","ZD_CSRF_TOKEN=0b242626-912a-4b97-ad60-dbf9dc627abe;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=0b242626-912a-4b97-ad60-dbf9dc627abe;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-05-03T10:57:27.959Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/333000001490001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-05-03T10:57:29.092Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 03 May 2023 10:57:29 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["9659494d27=4a360bb6e5ad29ea36ba980b5f0decec; Path=/","ZD_CSRF_TOKEN=059a0bdd-5232-44ac-83d0-81cdfef050a4;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=059a0bdd-5232-44ac-83d0-81cdfef050a4;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-05-03T10:57:29.099Z] : unknown eol undefined hence skipping check
+[error] [2023-05-03T10:57:29.281Z] : ✖ An unexpected error has occurred.
+[debug] [2023-05-03T10:57:29.281Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (/opt/homebrew/lib/node_modules/zcatalyst-cli/lib/errorOut.js:19:17)
+    at Command.<anonymous> (/opt/homebrew/lib/node_modules/zcatalyst-cli/lib/internal/command.js:141:40)
+    at Generator.throw (<anonymous>)
+    at rejected (/opt/homebrew/lib/node_modules/zcatalyst-cli/lib/internal/command.js:29:65)
+[debug] [2023-05-03T10:57:29.281Z] : Original Error: Error: EACCES: permission denied, copyfile '/Users/mubashirlabar/Documents/Web Apps/catalyst-3/functions/browseai_to_stori_press_function/node_modules/axios/dist/node/axios.cjs.map' -> '/Users/mubashirlabar/Documents/Web Apps/catalyst-3/.build/functions/browseai_to_stori_press_function/node_modules/axios/dist/node/axios.cjs.map'
+[debug] [2023-05-03T10:57:29.281Z] : Error Status: 500
+[info] [2023-05-03T10:57:29.281Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[debug] [2023-05-03T10:57:29.282Z] : EXEC ENDED with event: Error (Unexpected), message: EACCES: permission denied, copyfile '/Users/mubashirlabar/Documents/Web Apps/catalyst-3/functions/browseai_to_stori_press_function/node_modules/axios/dist/node/axios.cjs.map' -> '/Users/mubashirlabar/Documents/Web Apps/catalyst-3/.build/functions/browseai_to_stori_press_function/node_modules/axios/dist/node/axios.cjs.map'
+[debug] [2023-05-03T10:57:29.282Z] : TOTAL DURATION OF COMMAND EXEC : 3505
+[debug] [2023-05-03T10:57:29.284Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2023-05-03T10:57:30.423Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 03 May 2023 10:57:30 GMT","content-length":"0","connection":"close","set-cookie":["9659494d27=3be17b21c2f6d033e87a691a4a10ac07; Path=/","ZD_CSRF_TOKEN=b2363aac-0193-4c93-bed5-104e17b1f700;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b2363aac-0193-4c93-bed5-104e17b1f700;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
